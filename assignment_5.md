@@ -2,6 +2,7 @@
 This week to assure that we all have the opportunity to uniformly create the same work so we can focus on best practices when creating objects in Java I am opting to use 2 questions from your book's Programming Challenges section for chapter 6. Questions 2 and 4 on pg 396
 
 Please follow the design rules we identified in class so do not create set style methods unless asked to. The book references these as "mutator" methods we have been calling them "setters". Also order you class in the standard format:
+
 1. Fields
 2. Constructor
 3. Accessor/Mutators
