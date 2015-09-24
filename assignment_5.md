@@ -1,6 +1,20 @@
 #### Week 5 (Objects) Assignment
 This week to assure that we all have the opportunity to uniformly create the same work so we can focus on best practices when creating objects in Java I am opting to use 2 questions from your book's Programming Challenges section for chapter 6. Questions 2 and 4 on pg 396
 
+Please follow the design rules we identified in class so do not create set style methods unless asked to. The book references these as "mutator" methods we have been calling them "setters". Also order you class in the standard format:
+1. Fields
+2. Constructor
+3. Accessor/Mutators
+4. Public API
+5. Private API
+
+I will be grading these more specifically for adherence to design and style so keep that in mind and try to point these mistakes out to your peers in review.
+
+My rubric is:
+- proper indentation
+- proper order of elements
+- well documented classes and methods
+
 I am listing those questions here as well for your convenience:
 
 ##### Question 2. Car Class
