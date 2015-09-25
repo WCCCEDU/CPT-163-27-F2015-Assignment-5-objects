@@ -12,12 +12,12 @@ public class Retail {
         Scanner keyboard = new Scanner(System.in);
         
         //variable init
-        String discription;
+        String description;
         int onHand;
         double price;
         
-        print("Please enter the First Items Discription: ");
-        discription = keyboard.nextLine();//discription input
+        print("Please enter the First Items Description: ");
+        description = keyboard.nextLine();//description input
                 
         print("Please enter the First Items On Hands: ");
         onHand = keyboard.nextInt();//on hand input
@@ -28,12 +28,12 @@ public class Retail {
         keyboard.nextLine();//To clear buffer
         
         //new retail item
-        RetailItem itemOne = new RetailItem(discription, onHand, price);
+        RetailItem itemOne = new RetailItem(description, onHand, price);
         
         println(" ");//spacing things out
         
-        print("Please enter the Second Items Discription: ");
-        discription = keyboard.nextLine();//discription input
+        print("Please enter the Second Items Description: ");
+        description = keyboard.nextLine();//description input
         
         
         print("Please enter the Second Items On Hands: ");
@@ -45,12 +45,12 @@ public class Retail {
         keyboard.nextLine();//To clear buffer
         
         //new retail item
-        RetailItem itemTwo = new RetailItem(discription, onHand, price);
+        RetailItem itemTwo = new RetailItem(description, onHand, price);
         
         println(" ");//spacing things out
         
-        print("Please enter the Third Items Discription: ");
-        discription = keyboard.nextLine();//discription input
+        print("Please enter the Third Items Description: ");
+        description = keyboard.nextLine();//description input
                 
         print("Please enter the Third Items On Hands: ");
         onHand = keyboard.nextInt();//onhand input
@@ -61,7 +61,7 @@ public class Retail {
         keyboard.nextLine();//To clear buffer
         
         //new retail item
-        RetailItem itemThree = new RetailItem(discription, onHand, price);
+        RetailItem itemThree = new RetailItem(description, onHand, price);
         
         println("\n");//really spacing things out
         

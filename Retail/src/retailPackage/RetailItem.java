@@ -13,19 +13,19 @@ package retailPackage;
 public class RetailItem {
     
     //Fields
-    String discription;
+    String description;
     int onHand;
     double price;
     
     //constructors
-    public RetailItem(String discription, int onHand, double price){
-        this.discription = discription;
+    public RetailItem(String description, int onHand, double price){
+        this.description = description;
         this.onHand = onHand;
         this.price = price;
     }
     
     //accessors
-    public String getDiscription(){return this.discription;}
+    public String getDiscription(){return this.description;}
     public int getOnHand(){return this.onHand;}
     public double getPrice(){return this.price;}
     
