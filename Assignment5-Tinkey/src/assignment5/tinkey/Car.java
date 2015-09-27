@@ -21,26 +21,41 @@ public class Car {
      * @param make       make of the car, initialized to user input
      * speed             car's current speed, initialized to 0
      */
-       
-    public void setYear(int yearModel){
+    public Car(int yearModel, String make) {
         this.yearModel = yearModel;
-    }
-    
-    public void setMake(String make){
         this.make = make;
-    }
+        this.speed = 0;
+}  
     
+    /**
+     * setSpeed   sets the initial speed of the car
+     * @param speed initial speed of the car
+     */
     public void setSpeed(double speed){
         this.speed = speed;
-    }
+    }    
     
+    /**
+     * getYear  gets the year of the car
+     * @return  the year of the car
+     */
     public int getYear(){
         return this.yearModel;
     }
     
+    
+    /**
+     * getMake  gets the make of the car
+     * @return  returns the make of the car
+     */
     public String getMake(){
         return this.make;
     }
+    
+    /** 
+     * getSpeed  gets the speed of the car
+     * @return   returns the speed of the car
+     */
     
     public double getSpeed(){
         return this.speed;
