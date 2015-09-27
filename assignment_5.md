@@ -48,7 +48,7 @@ Write a constructor that accepts arguments for each field, appropriate `mutator`
   - From Command Line
     - Copy the `https` link from your fork on github.com (its below the settings button on the right hand side of the page)
     - run `git clone <copied url>` (this will create a folder the same name as the repo in the directory you ran this command)
-- Create a branch on your fork of the Assignment-2 Repo using the format <github-name>/<feature_description>
+- Create a branch on your fork of the Assignment-5 Repo using the format <github-name>/<feature_description>
   - From Github Desktop
     - Click the `Add a Branch` button (It should be the button next to the dropdown that says `master`)
     - Make sure you create your branch from master
