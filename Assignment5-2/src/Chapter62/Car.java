@@ -2,7 +2,7 @@
  * Chapter 6
  * Programming Challenge 2, Car Class
  */
-package assignment5.tinkey;
+package Chapter62;
 
 /**
  * Car  public class

@@ -3,7 +3,7 @@
  * Programming Challenge 2, Car Class
  * TestCar: this program tests and uses the Car class (Car.java)
  */
-package assignment5.tinkey;
+package Chapter62;
 
 import java.util.Scanner;
 /**
