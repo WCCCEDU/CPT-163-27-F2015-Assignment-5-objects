@@ -4,13 +4,13 @@ package carPackage;
  *Car class
  * @author Steve
  */
-public class carClass {
+public class Car {
     //fields
     public int yearModel, carSpeed;//year of car & speed of car
     public String carMake;//make of car
     
     //constructor
-    public carClass(int yearModel, String carMake){
+    public Car(int yearModel, String carMake){
         this.yearModel = yearModel;
         this.carSpeed = 0;
         this.carMake = carMake;
@@ -23,17 +23,17 @@ public class carClass {
     
     /**
      * this takes the car speed and increments it by 5
-     * @param carSpeed 
+     * @param 
      */
-   public void accelerate(int carSpeed){
+   public void accelerate(){
        this.carSpeed += 5;
    } 
    
    /**
     * This takes the car speed, and decrements it by 5
-    * @param carSpeed 
+    * @param 
     */
-   public void brake(int carSpeed){
+   public void brake(){
     this.carSpeed -= 5;
 }
    

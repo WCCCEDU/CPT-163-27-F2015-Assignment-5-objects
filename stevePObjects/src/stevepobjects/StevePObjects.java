@@ -1,10 +1,10 @@
 package stevepobjects;
-import carPackage.carClass;
+import carPackage.Car;
 import java.util.Scanner;
 
 
 /**
- * Main class used for calling carClass and running the file
+ * Main class used for calling Car and running the file
  * @author Steve
  */
 public class StevePObjects {
@@ -22,11 +22,11 @@ public class StevePObjects {
         
         println(" ");//spacing things out
         //creating the car object
-        carClass newCarClass = new carClass(yearModel, carMake);
+        Car newCarClass = new Car(yearModel, carMake);
         
         //for loop for printing the accelerated method
         for (int i = 0; i < 5; i++){
-            newCarClass.accelerate(newCarClass.carSpeed);
+            newCarClass.accelerate();
             println("Your " + newCarClass.getYearModel() + " " +
                     newCarClass.getCarMake()
             + " is now going: " + newCarClass.getCarSpeed() );
@@ -36,7 +36,7 @@ public class StevePObjects {
         
         //for loop for printing the brake method
         for (int i = 0; i < 5; i++){
-            newCarClass.brake(newCarClass.carSpeed);
+            newCarClass.brake();
             println("Your " + newCarClass.getYearModel() + " " + 
                     newCarClass.getCarMake()
             + " is now going: " + newCarClass.getCarSpeed() );
