@@ -29,5 +29,17 @@ public class RetailItem {
     public int getOnHand(){return this.onHand;}
     public double getPrice(){return this.price;}
     
-
+    //mutators
+    public void setDescription(String description){
+        this.description = description;
+        
+    }
+    public void setOnHand(int onHand){
+        this.onHand = onHand;
+    }
+    public void setPrice(double price){
+        this.price = price;
+    }
+    
+    
 }
