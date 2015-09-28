@@ -1,0 +1,66 @@
+package week.pkg5.objects.q4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Dylan Tkach
+ */
+public class Week5ObjectsQ4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        
+        double price;
+        int unitsOnHand;
+        String description;
+        
+        System.out.println("Please enter the price of the item: ");
+        price = keyboard.nextDouble();
+        System.out.println("Please enter the number of units on hand: ");
+        unitsOnHand = keyboard.nextInt();
+        System.out.println("Finally, please enter a brief description of the item: ");
+        description = keyboard.next();
+        
+        RetailItem Item1 = new RetailItem(price, unitsOnHand, description);
+        
+        System.out.println("Please enter the price of the next item: ");
+        price = keyboard.nextDouble();
+        System.out.println("Please enter the number of units on hand: ");
+        unitsOnHand = keyboard.nextInt();
+        System.out.println("Finally, please enter a brief description of the item: ");
+        description = keyboard.next();
+        
+        RetailItem Item2 = new RetailItem(price, unitsOnHand, description);
+        
+        System.out.println("Please enter the price of the final item: ");
+        price = keyboard.nextDouble();
+        System.out.println("Please enter the number of units on hand: ");
+        unitsOnHand = keyboard.nextInt();
+        System.out.println("Finally, please enter a brief description of the item: ");
+        description = keyboard.next();
+        
+        RetailItem Item3 = new RetailItem(price, unitsOnHand, description);
+        
+        System.out.println("The first item's price is " + Item1.getPrice() + 
+                ", the number of units on hand is " + Item1.getUnitsOnHand() +
+                ", and its description is as follows: '" + Item1.getDescription() + 
+                "'.\n");
+        
+        System.out.println("The first item's price is " + Item2.getPrice() + 
+                ", the number of units on hand is " + Item2.getUnitsOnHand() +
+                ", and its description is as follows: '" + Item2.getDescription() + 
+                "'.\n");
+        
+        System.out.println("The first item's price is " + Item3.getPrice() + 
+                ", the number of units on hand is " + Item3.getUnitsOnHand() +
+                ", and its description is as follows: '" + Item3.getDescription() + 
+                "'.\n");
+        
+        
+    }
+    
+}
