@@ -24,6 +24,11 @@ public class RetailItem {
         this.price = price;
     }
     
+    public RetailItem(){
+        this.description = " ";
+        this.onHand = 0;
+        this.price = 0.0;
+    }
     //accessors
     public String getDiscription(){return this.description;}
     public int getOnHand(){return this.onHand;}
