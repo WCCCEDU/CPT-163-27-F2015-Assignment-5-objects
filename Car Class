@@ -1,0 +1,50 @@
+/*
+ * Dylan Tkach
+ * CPT-163-27 Java Programming
+ */
+package week.pkg5.objects.q2;
+
+/**
+ * Class that takes and sets the model year, make, and speed.
+ * Contains two methods that modify the speed when called.
+ */
+public class Car {
+    // fields
+    private int speed;
+    public int yearModel;
+    public String make;
+    
+    /**
+     * Constructor to gather the model year, make, and set the default speed.
+     * @param yearModel Integer that represents the car's model year.
+     * @param make  String that represents the car's make.
+     */
+    public Car(int yearModel, String make){
+        this.yearModel = yearModel;
+        this.make = make;
+        
+        this.speed = 0;
+    }
+    
+    public int getYearModel(){return this.yearModel; }
+    public int getSpeed(){return this.speed; }
+    public String getMake(){return this.make; }
+    
+    /**
+     * Accelerates the car by 5.
+     * Speed = speed + 5.
+     */
+    public void accelerate(){
+        this.speed += 5;
+        System.out.println("Accelerated!");
+    }
+    
+    /**
+     * Decelerates the car by 5.
+     * Speed = speed - 5.
+     */
+    public void brake(){
+        this.speed -= 5;
+        System.out.println("Braked!");
+    }
+}
