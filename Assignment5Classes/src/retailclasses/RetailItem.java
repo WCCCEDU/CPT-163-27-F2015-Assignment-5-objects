@@ -22,15 +22,44 @@ public class RetailItem {
         this.price = price;
     }
     
+    // Initializing zero values for constructor fields
+    public RetailItem(){
+        this.description = " ";
+        this.unitsOnHand = 0;
+        this.price = 0.0;
+    }
+    
     /**
      * Accessors to get the values stored in description, unitsOnHand, and price
      * @return getDescription will return the string description
-     * @return getUnitsOnHand will return the integer unitsOnHand
-     * @return getPrice will return the double price
+     * getUnitsOnHand will return the integer unitsOnHand
+     * getPrice will return the double price
      */
     public String getDescription(){ return this.description; }
     public int getUnitsOnHand(){ return this.unitsOnHand; }
     public double getPrice(){ return this.price; }
     
+    /**
+     * Mutator to set field value for description
+     * @param description Will set the string value for the item description
+     */
+    public void setDescription(String description){
+        this.description = description;
+    } 
     
+    /**
+     * Mutator to set field value for unitsOnHand
+     * @param unitsOnHand Will set the integer value for amount of item on hand
+     */
+    public void setUnitsOnHand(int unitsOnHand){
+        this.unitsOnHand = unitsOnHand;
+    }
+    
+    /**
+     * Mutator to set field value for price
+     * @param price Will set the double value for price of the item
+     */
+    public void setPrice(double price){
+        this.price = price;
+    }
 }

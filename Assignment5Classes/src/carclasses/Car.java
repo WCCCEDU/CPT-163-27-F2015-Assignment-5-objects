@@ -24,8 +24,8 @@ public class Car {
     /**
      * Accessors to get the values stored in yearModel, speed, and make fields
      * @return getYearModel Will return the integer yearModel
-     * @return getSpeed Will return the integer speed
-     * @return getMake Will return the string make
+     * getSpeed Will return the integer speed
+     * getMake Will return the string make
      */
     public int getYearModel(){ return this.yearModel; }
     public int getSpeed(){ return this.speed; }
@@ -35,7 +35,7 @@ public class Car {
      * Public API to increase the speed of the car
      * @param accelerate Will increase speed by 5 
      */
-    public void accelerate(int speed){
+    public void accelerate(){
         this.speed += 5;
     }
     
@@ -43,7 +43,7 @@ public class Car {
      * Public API to decrease the speed of the car
      * @param brake Will decrease speed by 5
      */
-    public void brake(int speed){
+    public void brake(){
         this.speed -= 5;
     }
 }
