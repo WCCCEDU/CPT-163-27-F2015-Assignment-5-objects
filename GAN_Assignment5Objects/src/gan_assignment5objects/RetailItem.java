@@ -29,6 +29,25 @@ public class RetailItem {
     
     // Accessors and Mutators
     /**
+     * Mutator to set the description field
+     * @param description 
+     */
+    public void setDescription(String description){
+        this.description = description;}
+    /**
+     * Mutator to set the number of units on hand
+     * @param unitsOnHand 
+     */
+    public void setUnitsOnHand(int unitsOnHand){
+        this.unitsOnHand = unitsOnHand;}
+    /**
+     * Mutator to set the price of the item
+     * @param prince 
+     */
+    public void setPrice(double prince){
+        this.price = price;}
+    
+    /**
      * Accessors to get and return items description
      * @return strDescription
      */

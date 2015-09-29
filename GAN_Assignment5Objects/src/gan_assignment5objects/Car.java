@@ -16,8 +16,8 @@ public class Car {
     
     /**
      * Constructor
-     * @param intYearModel accepts an integer for the car's model year
-     * @param strCarMake accepts a string for the car's make
+     * @param modelYear accepts an integer for the car's model year
+     * @param carMake accepts a string for the car's make
      */
     public Car(int modelYear, String carMake){
         this.modelYear = modelYear;
@@ -26,6 +26,24 @@ public class Car {
     }  // end Car constructor
         
     // Accessors/Mutators
+    /**
+     * Mutator to set the model year of the car
+     * @param modelYear
+     * @return 
+     */         
+    public void setModelYear(int modelYear){this.modelYear = modelYear;}
+    /**
+     * Mutator to set the car make
+     * @param carMake
+     * @return 
+     */
+    public void setCarMake(String carMake){this.carMake = carMake;}
+    /**
+     * Mutator to set the car speed
+     * @param carSpeed
+     * @return 
+     */
+    public void setCarSpeed(int carSpeed){this.carSpeed = carSpeed;}
     
     /**
      * Accessors to get and return the year model of the car
