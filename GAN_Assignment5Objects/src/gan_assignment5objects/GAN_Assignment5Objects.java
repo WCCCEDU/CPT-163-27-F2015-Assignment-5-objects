@@ -18,34 +18,34 @@ public class GAN_Assignment5Objects {
         Scanner keyboard = new Scanner(System.in); // Initialize Scanner
 
         // Declarations
-        int intSelection;
-        String strContinue;
-        char charContinue;
+        int selection;
+        String onward;
+        char choice;
 
         // Welcome Message
         println("Welcome to Assignment 5 Objects");
         
         // Menu
         do{
-        println("Please select 2 for Programming Challenge #2, "
+        println("Please select 2 for Programming Challenge #2,\n"
                 + "or select 4 for Programming Challenge #4.\n");
         print("Selection: ");
         
-        intSelection = keyboard.nextInt();
+        selection = keyboard.nextInt();
         
-        if (intSelection == 2){
+        if (selection == 2){
            carMethod();
-        }else if (intSelection == 4){
+        }else if (selection == 4){
            retailItemMethod(); 
         }else{
             println("Invalid Entry");
         }
         
         print("Continue? (Y for yes and other key to exit): ");
-        strContinue = keyboard.next();
-        charContinue = strContinue.charAt(0);
+        onward = keyboard.next();
+        choice = onward.charAt(0);
                 
-        }while(charContinue == 'Y' || charContinue == 'y');  
+        }while(choice == 'Y' || choice == 'y');  
         
         println("\nHave a pleasant day.");
     } // end main
@@ -74,36 +74,32 @@ public class GAN_Assignment5Objects {
      */
     public static void carMethod(){
         Scanner keyboard = new Scanner(System.in); // Initialize Scanner
-        
-        // Declarations
-        int intYearModel;
-        String strMake;
-           
+                   
            print("Please enter your car's model year: ");
-           intYearModel = keyboard.nextInt();
+           int modelYear = keyboard.nextInt();
            print("Please enter you car's make or model: ");
-           strMake = keyboard.next();
+           String carMake = keyboard.next();
            
            println(""); // for spacing
            
            /**
             * Creates a new Car entitled yourCar
             */
-           Car yourCar = new Car(intYearModel, strMake);
+           Car yourCar = new Car(modelYear, carMake);
            
            println("GOOOOOOOOOOOO!!!!\n"
-                   + "Your " + yourCar.getYearModel() + " "
-                       + yourCar.getCarMake()
-                       + " is now traveling at a rate of...");
+                    + "Your " + yourCar.getModelYear() + " "
+                    + yourCar.getCarMake()
+                    + " is now traveling at a rate of...");
            for (int i = 0; i < 5; i++){
                yourCar.accelerate();
                print(yourCar.getCarSpeed() +  " mph!!!\t");
            } // end accelerate for loop
            
            println ("STOP!!!\n\n"
-                    + "Your " + yourCar.getYearModel()+ " "
-                        + yourCar.getCarMake()
-                        + " in now slowing to a speed of...");
+                    + "Your " + yourCar.getModelYear()+ " "
+                    + yourCar.getCarMake()
+                    + " in now slowing to a speed of...");
            for (int i= 0; i < 5; i++){
                yourCar.brake();
                print(yourCar.getCarSpeed() + " mph.\t");
@@ -116,62 +112,57 @@ public class GAN_Assignment5Objects {
      */
     public static void retailItemMethod(){
         Scanner keyboard = new Scanner(System.in);  // initialize Scanner
-        
-        // Declarations
-        String strDescription;
-        int intUnitsOnHand;
-        double dblPrice;
-        
+                
         println("This program will accept data for three retail items,\n"
                 + "collect, and display them for your viewing pleasure.\n");
                     
         println("Please enter the following data for item number 1.");           
         print("Enter a brief description of the item (ex. Designer Jeans): ");
-        strDescription = keyboard.nextLine();
+        String description = keyboard.nextLine();
         print("Enter the number of units on hand: ");
-        intUnitsOnHand = keyboard.nextInt();
+        int unitsOnHand = keyboard.nextInt();
         print("Enter the price of the item: ");
-        dblPrice = keyboard.nextDouble();
+        double price = keyboard.nextDouble();
         keyboard.nextLine(); // to clear buffer
         println("");
         
         /**
          * Create first instance of RetailItem
          */
-        RetailItem item1 = new RetailItem(strDescription,
-                intUnitsOnHand, dblPrice);
+        RetailItem item1 = new RetailItem(description,
+                unitsOnHand, price);
                     
         println("Please enter the following data for item number 2.");           
         print("Enter a brief description of the item (ex. Designer Jeans): ");
-        strDescription = keyboard.nextLine();
+        description = keyboard.nextLine();
         print("Enter the number of units on hand: ");
-        intUnitsOnHand = keyboard.nextInt();
+        unitsOnHand = keyboard.nextInt();
         print("Enter the price of the item: ");
-        dblPrice = keyboard.nextDouble();
+        price = keyboard.nextDouble();
         keyboard.nextLine(); // to clear buffer
         println("");
                 
         /**
          * Create second instance of RetailItem
          */
-        RetailItem item2 = new RetailItem(strDescription,
-            intUnitsOnHand, dblPrice);
+        RetailItem item2 = new RetailItem(description,
+            unitsOnHand, price);
                           
         println("Please enter the following data for item number 3.");           
         print("Enter a brief description of the item (ex. Designer Jeans): ");
-        strDescription = keyboard.nextLine();
+        description = keyboard.nextLine();
         print("Enter the number of units on hand: ");
-        intUnitsOnHand = keyboard.nextInt();
+        unitsOnHand = keyboard.nextInt();
         print("Enter the price of the item: ");
-        dblPrice = keyboard.nextDouble();
+        price = keyboard.nextDouble();
         keyboard.nextLine(); // to clear buffer
         println("");
         
         /**
          * Create third instance of RetailItem
          */
-        RetailItem item3 = new RetailItem(strDescription,
-            intUnitsOnHand, dblPrice);
+        RetailItem item3 = new RetailItem(description,
+            unitsOnHand, price);
         
         println("Item number 1: " + item1.getDescription() + (" has ")
                 + item1.getUnitsOnHand() + " unit(s) on hand,");
