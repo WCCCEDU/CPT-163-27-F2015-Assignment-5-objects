@@ -173,17 +173,17 @@ public class GAN_Assignment5Objects {
         RetailItem item3 = new RetailItem(strDescription,
             intUnitsOnHand, dblPrice);
         
-        println("Item number 1 " + item1.getDescription() + " has "
-                + item1.getUnitsOnHand() + " on hand,"
-                + " and costs: $" + item1.getPrice() + " per unit.");
+        println("Item number 1: " + item1.getDescription() + (" has ")
+                + item1.getUnitsOnHand() + " unit(s) on hand,");
+        System.out.printf(" at a cost of $%.2f per unit.\n", item1.getPrice());
         
-        println("Item number 2 " + item2.getDescription() + " has "
-                + item2.getUnitsOnHand() + " on hand,"
-                + " and costs: $" + item2.getPrice() + " per unit.");
+        println("Item number 2: " + item2.getDescription() + (" has ")
+                + item2.getUnitsOnHand() + " units(s) on hand,");
+        System.out.printf(" at a cost of $%.2f per unit.\n", item2.getPrice());
         
-        println("Item number 3 " + item3.getDescription() + " has "
-                + item3.getUnitsOnHand() + " on hand,"
-                + " and costs: $" + item3.getPrice() + " per unit.");
+        println("Item number 3: " + item3.getDescription() + (" has ")
+                + item3.getUnitsOnHand() + " unit(s) on hand,");
+        System.out.printf(" at a cost of $%.2f per unit.\n", item3.getPrice());
        
         println("");
         
