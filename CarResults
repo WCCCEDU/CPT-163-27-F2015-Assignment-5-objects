@@ -1,0 +1,41 @@
+
+package carresults;
+class CarResults {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String yearModel = null;
+ System.out.println("Year Model: " + yearModel);
+System.out.println("Make: " + make);
+System.out.println("Car Speed: " + speed);
+System.out.println("...accelerating...");
+
+public static void Accelerate(String args [])
+{
+Car Car1 = new Car(speed);
+Car.accelerate();
+Car.accelerate();
+Car.accelerate();
+Car.accelerate();
+Car.accelerate();
+System.out.println("Car speed: " + Car.getSpeed());
+System.out.println("...braking...");
+}
+
+public static void Brake(String[]args)
+{
+Car Car1 = new Car(speed);
+Car.brake();
+Car.brake();
+Car.brake();
+Car.brake();
+Car.brake();
+System.out.println("Year Model: " + yearModel);
+System.out.println("Make: " + make);
+System.out.println("Car speed: " + speed);
+
+
+  
+}
