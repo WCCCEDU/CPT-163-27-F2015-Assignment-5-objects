@@ -37,7 +37,7 @@ public class Car {
      * returns the value make of car after using the get function. 
      * @return 
      */
-    public String getmake(){
+    public String getMake(){
         return this.make;
     }
     
@@ -46,7 +46,7 @@ public class Car {
      * @return 
      */
     
-    public int getspeed(){
+    public int getSpeed(){
         return speed;
     }
     

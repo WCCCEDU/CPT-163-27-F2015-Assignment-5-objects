@@ -14,9 +14,9 @@ public class RetailItem {
     private double retailPrice; 
     
     public RetailItem(String descrpt, int numUnits, double price){
-        description= descrpt;
-        unitsOnHand = numUnits;
-        retailPrice = price;
+        this.description= descrpt;
+        this.unitsOnHand = numUnits;
+        this.retailPrice = price;
     }
     
     /*
